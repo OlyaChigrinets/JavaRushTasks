@@ -11,7 +11,7 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         int numberA = scanner.nextInt();
         int numberB = scanner.nextInt();
-        int big = numberA > numberB? numberA:numberB;
+        int big = numberA > numberB? numberA : numberB;
         System.out.println(big);
     }
 }
