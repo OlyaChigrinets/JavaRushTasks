@@ -7,12 +7,10 @@ package com.javarush.task.pro.task04.task0401;
 public class Solution {
     public static void main(String[] args) {
         String quote = "Я никогда не буду работать за копейки. Амиго";
-        int i = 1;
-        while (i<101){
+        int i = 0;
+        while (i < 100) {
             i++;
             System.out.println(quote);
         }
-
-
     }
 }
