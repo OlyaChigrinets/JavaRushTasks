@@ -8,13 +8,12 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int max = Integer.MIN_VALUE;
-        while (scanner.hasNextInt()) {
-            int num = scanner.nextInt();
-            if (num % 2 != 0) continue;
-            else if (num > max) max = num;
+        int i = 0;
+        while (i<20){
+            i++;
+            if (i%7==0)
+                continue;
+            System.out.println(i);
         }
-        System.out.println(max);
     }
 }
