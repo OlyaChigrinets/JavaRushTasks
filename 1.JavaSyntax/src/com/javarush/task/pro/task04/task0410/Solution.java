@@ -11,24 +11,23 @@ public class Solution {
         Scanner s = new Scanner(System.in);
         int min = s.nextInt();
         int secondMin = s.nextInt();
-        int tmp = 0;
-        if (min > secondMin) {
-            tmp = min;
+        if (min > secondMin){
+            int tmp = min;
             min = secondMin;
             secondMin = tmp;
         }
-        while (s.hasNextInt()) {
+        while (s.hasNextInt()){
             int numb = s.nextInt();
-            if (numb < min) {
+            if (numb < 0){
+                secondMin = numb;
+            } else if (numb < min) {
                 secondMin = min;
                 min = numb;
-            } else if (numb > min && numb < secondMin) {
-                secondMin = numb;
-            } else if (min == secondMin && numb > secondMin) {
+            } else if (min == secondMin && min < numb) {
                 secondMin = numb;
             }
-
         }
         System.out.println(secondMin);
+
     }
 }
