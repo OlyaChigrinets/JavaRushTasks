@@ -17,7 +17,9 @@ public class Solution {
             for (int b = 0; b < 10; b++) {
                 if (a == 9) {
                     System.out.print(bug);
-                } else if (a == 0 && b == 3) {
+                } else if (a < 8 && b == 3) {
+                    System.out.print(hole);
+                } else if (a == 8 && b == 3) {
                     System.out.print(robot);
                 } else
                     System.out.print(land);
