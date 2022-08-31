@@ -13,11 +13,18 @@ public class Solution {
 
 
     public static void main(String[] args) {
-        for (int a = 0; a < 10; a++){
-            for (int b = 0; b < 10; b++){
-                System.out.print(land);
+        for (int a = 0; a < 10; a++) {
+            for (int b = 0; b < 10; b++) {
+                if (a == 9) {
+                    System.out.print(bug);
+                } else if (a == 0 && b == 3) {
+                    System.out.print(robot);
+                } else {
+                    System.out.print(land);
+                }
             }
             System.out.println();
         }
     }
 }
+
