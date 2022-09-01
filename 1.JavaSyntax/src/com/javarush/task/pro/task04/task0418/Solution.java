@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        double glass = 0.5;
+        double glass =0.5;
         Scanner scanner = new Scanner(System.in);
         boolean i = scanner.nextBoolean();
         if (i) {
