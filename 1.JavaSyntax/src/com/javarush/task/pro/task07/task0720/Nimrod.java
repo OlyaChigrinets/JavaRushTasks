@@ -12,7 +12,7 @@ public class Nimrod {
         int shield = applyShield(b);
         health = health - shield;
     }
-    public int attack() {return rocket;}
+    public int attack() {return angelicaKiss;}
 
     public byte applyShield(int byt) {
         byte news = (byte) byt;
