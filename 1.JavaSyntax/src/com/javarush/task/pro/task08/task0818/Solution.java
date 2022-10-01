@@ -13,10 +13,21 @@ public class Solution {
             {971, 276, 974}, {413, 829, 494}, {344, 345, 322}, {889, 713, 222}, {628, 963, 234},
             {254, 428, 926}, {633, 762, 848}, {896, 130, 653}, {971, 636, 861}, {328, 976, 139}};
 
-    public static double[] safeRoute = new double[25];
+    public static double[] safeRoute = new double[100];
 
     public static void main(String[] args) {
-        //напишите тут ваш код
+        int i = 0;
+        
+        for (int[] coordinates : anomalySpace) {
+            int x = coordinates[0];
+            int y = coordinates[1];
+            int z = coordinates[2];
+            double result = Math.sin(x) * Math.PI + Math.cos(y) * Math.min(x, Math.min(y, z)) + Math.tan(y) / Math.log(z);
 
+            if (result >= 100 && result <= 200) {
+                safeRoute[i] = result;
+                i++;
+            }
+        }
     }
 }
