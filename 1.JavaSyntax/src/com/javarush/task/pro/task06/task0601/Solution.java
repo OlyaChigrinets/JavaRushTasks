@@ -20,6 +20,7 @@ public class Solution {
         System.out.println("-Авиации;");
         System.out.println("-Электроэнергетике.");
     }
+
     public static void printJavaInfo() {
         System.out.println("Остров Ява:");
         System.out.println("Входит в состав Индонезии.");
