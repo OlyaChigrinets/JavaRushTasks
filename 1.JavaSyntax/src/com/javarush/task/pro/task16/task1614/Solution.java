@@ -23,6 +23,6 @@ public class Solution {
     }
 
     static Instant getMaxFromSecondsAndNanos() {
-        return Instant.ofEpochSecond(Instant.MAX.getEpochSecond(), 999999999);
+        return Instant.ofEpochSecond(Instant.MAX.getEpochSecond(), Instant.MAX.getNano());
     }
 }
