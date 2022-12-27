@@ -1,4 +1,4 @@
-package com.javarush.task.pro.task17.task1707;
+ package com.javarush.task.pro.task17.task1707;
 
 /* 
 Питомцы бывают разные
