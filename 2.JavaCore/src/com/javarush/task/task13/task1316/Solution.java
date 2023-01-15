@@ -18,7 +18,6 @@ public class Solution {
 
         final String NAME = "Submit";
 
-
         String onPress(Object o);
 
     }
