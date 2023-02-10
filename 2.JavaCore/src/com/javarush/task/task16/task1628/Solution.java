@@ -15,7 +15,7 @@ public class Solution {
     public static volatile AtomicInteger readStringCount = new AtomicInteger(0);
     public static volatile BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
         //read count of strings
         int count = Integer.parseInt(reader.readLine());
 
@@ -45,16 +45,18 @@ public class Solution {
         private List<String> result = new ArrayList<String>();
 
         public void run() {
-            while (!isInterrupted()) {
-                try {
-                    String s = reader.readLine();
-                    result.add(s);
-                    readStringCount.incrementAndGet();
-
-                } catch (IOException e) {
+            String s;
+            try {
+                while(!Thread.currentThread().isInterrupted()) {
+                    if ((s = reader.readLine()) != null) {
+                        result.add(s);
+                        readStringCount.incrementAndGet();
+                    }
                 }
-
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+
         }
 
         @Override
