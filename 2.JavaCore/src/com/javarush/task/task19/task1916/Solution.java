@@ -55,7 +55,6 @@ public class Solution {
             lines.add(new LineItem(Type.ADDED, fileLines2.get(count2)));
             count2++;
         }
-
     }
     public static enum Type {
         ADDED,        //добавлена новая строка
